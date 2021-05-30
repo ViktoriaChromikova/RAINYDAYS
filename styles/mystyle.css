@@ -76,10 +76,10 @@ nav li {
 
 nav a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: green;
-  padding: 10px;
+  padding: 1px;
   display: block;
   background-color:transparent;
   border: 1px,transparent;
@@ -98,7 +98,7 @@ nav a:hover {
 
 
 #hamburger-menu{
-  display: none;,
+  display: none;
 }
 
 #hamburger-menu:checked ~ nav {
@@ -193,7 +193,7 @@ min-height: 300px;
     color:yellow} 
     
   }
-}
+
 
 
 
