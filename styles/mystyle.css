@@ -58,8 +58,8 @@ top:20px;
 }
 
 .logo { 
-max-width: 200px;
-padding:40px;}
+max-width: 150px;
+padding:60px 20px;}
 
 
 nav {
@@ -148,12 +148,18 @@ min-height: 300px;
   .hamburger-label {
     display: none;}
 
-  nav{
+  nav {
     display: inline-block;
     padding: 40px;
     font-size: 20px;
     position: relative;
   
+  }
+
+  nav a {
+    font-size:20px;
+    padding:20px ;
+
   }
  nav a:hover{
   background-color: wheat;
@@ -161,13 +167,13 @@ min-height: 300px;
  }
  
     ul{
-      padding: 0px;
+      padding: 20px 20px 60px 20px;
       display: flex;
     }
     li{
       display:inline-block;
       margin:20px;
-      padding: 20px;}
+      padding: 20px}
      
 
   
