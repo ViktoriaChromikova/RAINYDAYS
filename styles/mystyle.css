@@ -1,189 +1,219 @@
-
-
-
-header {
-width: 100%;
-background-color: rgb(239, 237, 237);
-background-size:cover;
-max-height: 200px;
-font-family: "Verdana, Geneva, Tahoma, sans-serif";
-position:sticky;
-top:20px;
+.wrapper{
+  width: 100%;
+  max-height: 200px;
+  background-color: #F1F1F4;
+  background-size: cover;
+  position: sticky;
 
 }
 
-.button-cart{
-  background-color: transparent;
-  border: 1px transparent;
-  border-radius: 30%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:green;
-  float: right;
-  padding:10px;
-  margin:0,5px;
-  cursor:pointer;
-  transition-duration: 0,4s; }
- 
- 
-  .button-cart:hover {
-    background-color: wheat;
-    color: green; }
-
-
-.button-search{
-  background-color: transparent;
-  border: 1px transparent;
-  border-radius: 30%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:green; 
-  float: right;
-  padding:10px;
-  margin:0,5px;
-  cursor:pointer;
-  transition-duration: 0,4s;
-}
- 
-.button-search:hover {
-  background-color: wheat;
-  color: green; }
-
-
- 
-.hamburger-label {
-  float: right;
-  color: rgb(83, 128, 0);
-  padding: 2px;
-  font-size: 20px;
-  display: block;
-}
-
-.logo { 
-max-width: 150px;
-padding:60px 20px;}
-
-
-nav {
-display: none;
-
-}
-nav ul{
-  padding: 0px;
-
-}
-nav li {
-  display: block;
-}
-
-nav a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  text-decoration: none;
-  color: green;
-  padding: 1px;
-  display: block;
-  background-color:transparent;
-  border: 1px,transparent;
-  border-radius: 30%;
-  transition-duration: 0,4s;
+.logo{
+  position:relative;
+  max-height:60px;
+  padding: 15px;
   
-}
-nav a:hover {
-  background-color: wheat;
-  border: 1px, transparent;
-}
-.current{
-  font-weight: bold;
-  background-color: wheat;
-}
-
-
-#hamburger-menu{
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-  float:right;
-  text-align: center;
-}
-
-
-
-.box{
-  
-width: 100%;
-background-image: url(../images/IMG_8155.JPG);
-background-size: cover;
-min-height: 300px;
-   
-   
- 
   }
-#info a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
-  color:wheat;
-  font-weight: bold;
-  top:100px;
-  right: 10px;
-  float:right;
-  text-align: right;
-  font-size: 2em;
-  margin-top: 110px;
-  margin-right: 50px;
-  margin-left:800px;
-  cursor: pointer;
-  
+  .logo:hover{
+   cursor:pointer;
+  }
 
-
+  nav{
+    display:none;
+  }
+  .sub-nav{
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.5rem;
+    color: #075011;
+   
+  }
+nav ul li ul.sub-nav{
+  box-shadow: 1px 1px 2px grey, -1px 0px 1px #F1F1F4;
+  background-color: #F1F1F4;
+  opacity:80% ;
 }
-#info a:hover{
+  .hamburger-label{
+    position: relative;
+    float: right;
+    color:#075011;
+    margin:0.6rem;
+    font-size: 1rem;
+  }
+  #hamburger-menu{
+    display:none;
+  }
 
-  color:yellow} 
+  .hamburger-label:hover{
+   color:#facf26;
+   cursor: pointer;
+   transition: all 0.5s ease;
+  }
+    #hamburger-menu:checked ~ nav{
+    display:block;
+    position:relative;
+    float: right;
+    text-align: center;
+  }
+  nav ul{
+    padding:0px;
+  }
+   nav li{
+    display:block; 
+  }
+   nav a{
+    color: #075011;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display:block;
+    padding:5px;
+    background-color:#E5E5EA;
+    border-radius: 30%;
+  }
+  nav a:hover{
+    background-color: wheat;
+  }
+  nav ul li a .sub-nav:hover {
+    background-color: wheat;
+    border: 1px, black;
+    transition: all 0.5s ease
+  }
+  nav ul li:hover ul.sub-nav{
+    display:block;
+    
+  }
+  .sub-nav a:hover{
+    background-color: wheat;
+    border: 1px, black;
+    transition: all 0.5s ease;
+  }
+  .current{
+    font-weight: bold;
+    background-color: wheat;
+  }
   
-@media (min-width: 1000px){
+  .button-cart{
+    position:relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.6em;
+    color: #075011;
+    float: right;
+    margin: 0.2em;
+    padding-top: 0.8rem;
+    cursor:pointer;
+   }
+   
+   
+    .button-cart:hover {
+    
+      color:#facf26; 
+      transition: all 0.5s ease;}
+  
+  
+  .button-search{
+    position:relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.6rem;
+    color: #075011; 
+    float: right;
+    margin: 0.2em;
+    padding-top: 0.8rem;
+    cursor:pointer;
+   
+  }
+   
+  .button-search:hover {
+    color:#facf26;
+    transition: all 0.5s ease;}
+   
+    .wrapper::after{
+      content:"";
+      clear:both;
+      display:table;
+    }
+    .box{
+  
+      width: 100%;
+      background-image: url(../images/IMG_8155.JPG);
+      background-size: cover;
+      min-height: 300px;
+      margin-top: 20px;
+         
+         
+       
+        }
+      #info a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color:wheat;
+        font-weight: bold;
+        top:100px;
+        right: 10px;
+        float:right;
+        text-align: right;
+        font-size: 2rem;
+        margin-top: 110px;
+        margin-right: 50px;
+        margin-left:800px;
+        cursor: pointer;
+        
+      
+      
+      }
+      #info a:hover{
+      
+        color:#facf26} 
+
+ @media (min-width: 640px){
+  
   .logo { 
     float: left;
+    max-height: 100px;
   }
   .hamburger-label {
     display: none;}
 
   nav {
+    
     display: inline-block;
-    padding: 40px;
-    font-size: 20px;
-    position: relative;
+    padding:2rem;
+    
+  }  
+  ul{
   
+    display: flex;
   }
 
   nav a {
-    font-size:20px;
-    padding:20px ;
+    font-size:  1rem;
+    padding:1rem ;
+    margin-right: 2rem;
 
   }
  nav a:hover{
   background-color: wheat;
   border: 1px, transparent;
  }
- 
-    ul{
-      padding: 20px 20px 60px 20px;
-      display: flex;
-    }
-    li{
-      display:inline-block;
-      margin:20px;
-      padding: 20px}
+
+ .sub-nav{
+   font-size: 1rem;
+   padding:2rem;
+ }
+ .button-search {
+    float:right;
+    font-size: 1rem;
+    margin:0.5rem;
+  } 
      
 
+  .button-cart{
+    float:right;
+    font-size: 1rem;
+    margin:0.5rem;
+  } 
+.box{
+  min-height: 600px}
   
-      .box{
-  
-        width: 100%;
-        background-image: url(../images/IMG_8155.JPG);
-        background-size: cover flex;
-        min-height: 600px;}
-
   #info a
   {
     text-decoration: none;
@@ -194,17 +224,4 @@ min-height: 300px;
     margin-left: 2000px;
     text-align: right;}
 
-     #info a:hover{
-
-    color:yellow} 
-    
-  }
-
-
-
-
-
-
-
-
-
+}
