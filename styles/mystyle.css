@@ -76,7 +76,7 @@ nav ul li ul.sub-nav{
   nav ul li a .sub-nav:hover {
     background-color: wheat;
     border: 1px, black;
-    transition: all 0.5s ease
+    transition: all 0.5s ease;
   }
   nav ul li:hover ul.sub-nav{
     display:block;
@@ -164,9 +164,12 @@ nav ul li ul.sub-nav{
       
         color:#facf26} 
 
-
+.allproducts img{
+  max-width: 8rem;
+}
 .allproducts{
-  display:flex;
+  display:grid;
+  display: table-row;
 margin: 2rem;}
 
  @media (min-width: 640px){
