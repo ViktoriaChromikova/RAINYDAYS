@@ -1,10 +1,10 @@
 <!doctype html>
     <html>
         <head>
-            <title> Product Page Men Winter </title>
+            <title> Checkout </title>
             <script src="https://kit.fontawesome.com/72c3075b0e.js" crossorigin="anonymous"></script>
             <link rel="stylesheet"href="styles/mystyle.css"> 
-            <meta name="description"content= "product page men">
+            <meta name="description"content= "checkout">
             <meta name="viewport"content= "width = device-width" intial-scale=1.0>
         
         </head>    
@@ -51,32 +51,43 @@
           </div>
       
          </header>
-        
-        <main>
-     <div class="product-grid">
-         <div class="product-item"> <img src="images/jackets/jacketa.png"></div>
-         <div class="product-specification">
-            <h1>Jacket Snowfall</h1>
-            <h2>This is our jacket for heavy snowfall</h2>
-         </div>
-        <form>
-           <fieldset>
-               <legend>Color Choice</legend>
-               <input type="radio" name="color" value="blue" id="blue"><label for="blue">Blue</label>
-            <input type="radio" name="color" value="green" id="green"><label for="green">Green</label></div>
-        </fieldset>
-           <fieldset>
-               <legend>Size Choice</legend>
-            <input type="radio" name="size" value="small" id="small"><label for="small">Small</label>
-            <input type="radio" name="size" value="large" id="large"><label for="large">Large</label></div>
+         <form>
+         <fieldset>
+        <legend>Shipping details</legend>
+        <label for="name">Your name</label>
+         <input type="text" name="name" id="name">
+         <label for="last name">Last name</label>
+         <input type="text" name="last name" id="last name">
+         <label for="adress">Adress</label>
+         <input type="text" name="Adress" id="adress">
+         <label for="email">E-mail</label>
+         <input type="text" name="email" id="email">
+         </fieldset>
+         <fieldset>
+            <legend>Billing details</legend>
+            <label for="Credit card number">Credit card</label>
+        <input type="number"name="Credit card number"id="credit card">
+        <label for="Validity">Validity</label>
+        <input type="number"name="Validity"id="validity">
+        <label for="CVC">CVC</label>
+        <input type="number"name="CVC"id="CVC">
         </fieldset>
         <fieldset>
-            <input type="submit"value="BUY NOW">
-        </fieldset>
-         </form>
-        <div class="price">999,-</div>
-  </div>
-     
+            <legend>User details</legend>
+     <h2>Feel like sticking around? </h2>
+     <h3>Add password</h3>
+     <label for="password">Your password</label>
+     <input type="text" name="password" id="password">
+     <label for="confirm">Confirme</label>
+     <input type="text" name="confirm" id="confirm">
+     <label for="Remember my details">Remember my details</label>
+       <input type="checkbox" id="remember"> 
+</fieldset>
+<fieldset>
+    <legend>Sumbit your order</legend>
+    <input type="submit"value="PAY NOW">
+</fieldset>
+</form>
         </main> 
          <footer> 
            <p>copyright &copy;</p> 
