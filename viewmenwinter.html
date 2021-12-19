@@ -14,53 +14,44 @@
             <title> Product Page Men Winter </title>
             <script src="https://kit.fontawesome.com/72c3075b0e.js" crossorigin="anonymous"></script>
             <link rel="stylesheet"href="styles/mystyle.css"> 
-            <meta name="description"content= "product page men">
+            <meta name="description"content= "outdoor clothing e-shop">
             <meta name="viewport"content= "width = device-width" intial-scale=1.0>
         
         </head>    
         <body>
          <header>
-       
             <div class="wrapper">
-          <a href="index.html"><img src="images/RainyDays_Logo.png "alt= "Logo of RAINYDAYS" class="logo"> </a>
-       
-           <label class= "hamburger-label" for="hamburger-menu">☰</label>
-           <input type= "checkbox" id="hamburger-menu">
-           
-             <nav>
-             <ul>
-               <li> <a href="men.html">Men</a> 
-               <ul class="sub-nav">
-                 <li> <a href="winterjacketmen.html">Winter Jackets</a></li>
-                 <li><a href="springjacketmen.html">Spring Jackets</a></li>
-                 <li><a href="expeditionacketmen.html">Expedition Jackets</a></li>
-               </ul>
-              </li>
-              <li> <a href="women.html">Women</a> 
-              <ul class="sub-nav">
-                <li><a href="winterjacketwomen.html">Winter Jackets</a></li>
-                <li><a href="springjacketwomen.html">Spring Jackets</a></li>
-                <li><a href="expeditionjacketwomen.html">Expedition Jackets</a></li>
-              </ul></li>
-              <li> <a href="junior.html">Junior</a> 
-              <ul class="sub-nav">
-               <li> <a href="winterjacketjunior.html">Winter Jackets</a></li>
-               <li><a href="springjacketjunior.html">Spring Jackets</a></li>
-               <li><a href="expeditionoverall.html">Expedition Overalls</a></li>
-              </ul></li>
-             </ul>
-           </nav>
-          
-             <div class="button-cart"> <i class="fas fa-shopping-bag"></i>
-                <p>Item was added to your cart</p>
-                <p> <a href="viewcart.html">View cart</a></p>
-             </div>
-             <div  class="button-search"><i class="fas fa-search"></i></div>
-        
-             
-          </div>
-      
-         </header>
+                <a href="index.html"><img src="images/RainyDays_Logo.png "alt= "Logo of RAINYDAYS" class="logo"> </a>
+                <label class= "hamburger-label" for="hamburger-menu">☰</label>
+                <input type= "checkbox" id="hamburger-menu">
+                <nav>
+                  <ul>
+                     <li> <a href="men.html">Men</a> 
+                           <ul class="sub-nav">
+                               <li> <a href="winterjacketmen.html">Winter Jackets</a></li>
+                               <li><a href="springjacketmen.html">Spring Jackets</a></li>
+                               <li><a href="expeditionacketmen.html">Expedition Jackets</a></li>
+                           </ul>
+                    </li>
+                     <li> <a href="women.html">Women</a> 
+                           <ul class="sub-nav">
+                               <li><a href="winterjacketwomen.html">Winter Jackets</a></li>
+                               <li><a href="springjacketwomen.html">Spring Jackets</a></li>
+                               <li><a href="expeditionjacketwomen.html">Expedition Jackets</a></li>
+                           </ul>
+                    </li>
+                    <li> <a href="junior.html">Junior</a> 
+                         <ul class="sub-nav">
+                             <li> <a href="winterjacketjunior.html">Winter Jackets</a></li>
+                             <li><a href="springjacketjunior.html">Spring Jackets</a></li>
+                             <li><a href="expeditionoverall.html">Expedition Overalls</a></li>
+                         </ul>
+                    </li>
+                    <li><a href="about.html">Contact us</a></li>
+                  </ul>
+               </nav>
+            <div class="button-cart"> <i class="fas fa-shopping-bag"></i>
+       </header>
         
         <main>
      <div class="product-grid">
@@ -69,23 +60,22 @@
             <h1>Jacket Snowfall</h1>
             <h2>This is our jacket for heavy snowfall</h2>
          </div>
-        <form>
+        <form id="jacketForm">
            <fieldset>
                <legend>Color Choice</legend>
                <input type="radio" name="color" value="blue" id="blue"><label for="blue">Blue</label>
             <input type="radio" name="color" value="green" id="green"><label for="green">Green</label></div>
-        </fieldset>
+           </fieldset>
            <fieldset>
                <legend>Size Choice</legend>
             <input type="radio" name="size" value="small" id="small"><label for="small">Small</label>
             <input type="radio" name="size" value="large" id="large"><label for="large">Large</label></div>
-        </fieldset>
-        <fieldset>
-            <input type="submit"value="BUY NOW">
-        </fieldset>
+           </fieldset>
+            <input type="submit" id="submitJacket"value="BUY NOW">
          </form>
         <div class="price">999,-</div>
   </div>
+  <script src="js/script.js"></script>
      
         </main> 
          <footer> 

@@ -47,7 +47,7 @@ nav ul li ul.sub-nav{
     float: right;
     color:#075011;
     margin:0.6rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #hamburger-menu{
     display:none;
@@ -80,28 +80,14 @@ nav ul li ul.sub-nav{
     background-color:#E5E5EA;
     border-radius: 30%;
   }
+  .sub-nav{
+    display: none;
+  }
   nav a:hover{
     background-color: wheat;
     color: #075011;
   }
-  nav ul li a .sub-nav:hover {
-    background-color: wheat;
-    transition: all 0.5s ease;
-  }
-  nav ul li:hover ul.sub-nav{
-    display:block;
-    
-  }
-  .sub-nav a{
-    border-radius: 0%;
-   
-    
-  }
-  .sub-nav a:hover{
-    background-color: wheat;
-    border: 1px, black;
-    transition-duration: 1s;
-  }
+ 
   .current{
     font-weight: bold;
     background-color: wheat;
@@ -119,42 +105,19 @@ nav ul li ul.sub-nav{
    }
    
    
-    .button-cart:hover {
-    
-      color:#facf26; 
-      transition: all 0.5s ease;}
-    .button-cart p{
-        display:none;
-        font-size:0.5rem;
-        background-color: wheat;
-        text-align: center;
-        margin-right:20px;
-      }
-      .button-cart p a{
-        text-decoration: none;
-        cursor:pointer;
-      }
-      .button-cart:hover p{
-        display:flex;
-        color:#075011;
-      }
-    
-  .button-search{
-    position:relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.6rem;
-    color: #075011; 
-    float: right;
-    margin: 0.2em;
-    padding-top: 0.8rem;
-    cursor:pointer;
-   
+  .button-cart:hover {
+    color:#facf26; 
+    transition: all 0.5s ease;
   }
-   
-  .button-search:hover {
-    color:#facf26;
-    transition: all 0.5s ease;}
-   
+
+  .button-cart p{
+     display:none;
+     font-size:1.2rem;
+     background-color: wheat;
+     text-align: center;
+     margin-right:20px;
+      }
+
     .wrapper::after{
       content:"";
       clear:both;
@@ -310,6 +273,30 @@ footer img{
   margin-left: 49%;
  padding: 5px;
 }
+.checkout{
+  background-color: #075011;
+  color:wheat;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 100px;
+  border: 1px black;
+}
+
+.price{
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+.form-error{
+  display: none;
+  color:rgb(48, 1, 1);
+  background-color: salmon;
+  padding: 10px;
+  font-size: 10px;
+}
+.added{
+  background-color: wheat;
+}
 @media( min-width:640px){
 .logo{
   float:left;
@@ -341,6 +328,24 @@ nav a{
 }
 
  @media (min-width: 1000px){
+  nav ul li a .sub-nav:hover {
+    background-color: wheat;
+    transition: all 0.5s ease;
+  }
+  nav ul li:hover ul.sub-nav{
+    display:block;
+    
+  }
+  .sub-nav a{
+    border-radius: 0%;
+   
+    
+  }
+  .sub-nav a:hover{
+    background-color: wheat;
+    border: 1px, black;
+    transition-duration: 1s;
+  }
   
   .logo { 
     float: left;
@@ -375,17 +380,11 @@ nav a{
    font-size: 1rem;
    padding:2rem;
  }
- .button-search {
-    float:right;
-    font-size: 1rem;
-    margin:0.5rem;
-  } 
-     
 
-  .button-cart{
+ .button-cart{
     float:right;
-    font-size: 1rem;
-    margin:0.5rem;
+    font-size: 1.5rem;
+    margin:1rem;
   } 
 .button-cart p a{
   font-size:1rem;
@@ -424,7 +423,7 @@ nav a{
   
 fieldset{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #075011;
   display:inline;
   max-width: 50%;
