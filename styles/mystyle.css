@@ -163,10 +163,14 @@ h1{
 }
 
 .API{
-  display:flex;
+  display:block;
 }
 .API img{
   max-height: 15rem;
+}
+.API h2{
+  font-size: 15rem;
+  text-align: justify;
 }
 .allproducts{
   display:grid;
@@ -201,7 +205,8 @@ h2{
   text-align: center;
 }
 .overview{
-  display: grid;
+  display: block;
+  align-items: center;
   max-width: 100%;
 }
 .overview img{
