@@ -162,7 +162,12 @@ h1{
   text-align: center;
 }
 
-
+.API{
+  display:flex;
+}
+.API img{
+  max-height: 15rem;
+}
 .allproducts{
   display:grid;
   grid-template-rows: auto auto auto;
@@ -179,8 +184,6 @@ h1{
 .productsbygroup img{
   margin:2rem 2rem 2rem 5rem;
   max-height: 10rem;
-  
-  
 }
 
 .availible{
@@ -196,6 +199,14 @@ h1{
 }
 h2{
   text-align: center;
+}
+.overview{
+  display: grid;
+  max-width: 100%;
+}
+.overview img{
+  margin:2rem 2rem 2rem 5rem;
+  max-height: 10rem;
 }
 
 .product-grid{

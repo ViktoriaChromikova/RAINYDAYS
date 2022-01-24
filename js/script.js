@@ -13,11 +13,10 @@ function validateForm(){
     } else{
         jacketForm.innerHTML += `<p>select size</p>`
     }
-    if (blueColor || greenColor);(sizeSmall || sizeLarge)
+    if (blueColor || greenColor) + (sizeSmall || sizeLarge)
         jacketForm.innerHTML += `<a href="viewcart.html" class="added">Item added in your shopping bag</a>`
- 
+    } 
 
-}
 jacketForm.addEventListener("submit", validateForm);
 
 
